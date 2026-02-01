@@ -53,7 +53,7 @@ public class AuthApplication {
         };
     }
 
-git     @Bean
+    @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
                 .authorizeHttpRequests(ae -> ae.anyRequest().authenticated())
